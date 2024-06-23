@@ -1,0 +1,282 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(130.63deg, #0003AA 24.11%, #5B0369 100.86%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-section {
+    flex: 1;
+}
+
+.navbar-section {
+    flex: 4;
+}
+
+#logo {
+    height: 28px;
+}
+
+.login{
+    border: 1.6px;
+    border-color: whitesmoke;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#home {
+    background: linear-gradient(130.63deg, #0003AA 24.11%, #5B0369 100.86%);
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    border-radius: 0 0 50px 50px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1500px;
+}
+
+.hc {
+    flex: 1;
+    padding: 20px;
+}
+
+.hc h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+.hc p {
+    font-size: 25px;
+    text-align: justify;
+    font-family: 'Times New Roman';
+    margin-top: 20px;
+}
+
+.round {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round img {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    border-radius: 50px 0 0 0;
+}
+
+.wc {
+    flex: 1;
+    padding: 20px;
+    color: black;
+}
+
+.wc h1 {
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Times New Roman';
+}
+
+.wc p {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Times New Roman';
+    margin-top: 20px;
+}
+
+.wcr {
+    flex: 1;
+    padding: 20px;
+}
+
+.wcr h2 {
+    font-size: 30px;
+    margin: 20px 0 10px;
+    font-family: 'Times New Roman';
+}
+
+.wcr p {
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Times New Roman';
+}
+
+/* Contact Section */
+.contact-left {
+    flex: 1;
+    padding: 20px;
+    color: black;
+}
+
+.contact-left h1 {
+    font-size: 50px;
+    font-family: 'Times New Roman';
+    margin-bottom: 10px;
+}
+
+.contact-left h2 {
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    margin-bottom: 10px;
+}
+
+.contact-left p {
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    text-align: justify;
+}
+
+.contact-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-row input,
+.form-row textarea {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Times New Roman';
+}
+
+.form-row textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.form-row button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0003AA;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 1100px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    .header-container {
+        flex-wrap: wrap;
+    }
+
+    .navbar-section {
+        flex: 1;
+        margin-top: 10px;
+    }
+
+    .hc h1 {
+        font-size: 60px;
+    }
+
+    .hc p,
+    .wc p,
+    .wcr p,
+    .contact-left p {
+        font-size: 18px;
+    }
+
+    .wc h1,
+    .wcr h2,
+    .contact-left h1,
+    .contact-left h2 {
+        font-size: 40px;
+    }
+
+    .round img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hc h1 {
+        font-size: 40px;
+    }
+
+    .hc p,
+    .wc p,
+    .wcr p,
+    .contact-left p {
+        font-size: 16px;
+    }
+
+    .wc h1,
+    .wcr h2,
+    .contact-left h1,
+    .contact-left h2 {
+        font-size: 30px;
+    }
+
+    .round img {
+        max-width: 200px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row input,
+    .form-row textarea {
+        width: 100%;
+    }
+}
